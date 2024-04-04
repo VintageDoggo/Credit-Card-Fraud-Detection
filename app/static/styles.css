@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Background color for the entire page */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.logo {
+    width: 150px; /* Adjust the size of the logo as needed */
+    margin-bottom: 20px;
+}
+
+.heading {
+    font-size: 24px; /* Increase the font size of the heading */
+    color: #347571; /* Color for the heading */
+    margin-bottom: 20px;
+}
+
+.prediction-button {
+    background-color: #347571; /* Button color */
+    color: white; /* Button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Increase the font size of the button text */
+    transition: background-color 0.3s ease;
+}
+
+.prediction-button:hover {
+    background-color: #285e4e; /* Darker color on hover */
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Fraud Detection</title>
+    <link rel="stylesheet" href= "{{ url_for('static', filename='styles.css') }}">
+</head>
+<!-- <body>
+    <div class="container">
+        <img src="C:\COMP313-002-Winter2024-Team6---Credit-Card-Fraud-Detection\app\static\logo1.png" alt="Logo">
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".csv">
+            <button type="submit">Start Prediction</button>
+        </form>
+    </div>
+</body> -->
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="{{ url_for('static', filename='logo1.png') }}" alt="Logo" class="logo">
+            <h1 class="heading">Credit Card Fraud Detection</h1>
+            <form action="/loading" method="post">
+                <button type="submit" class="prediction-button">Start Prediction</button>
+            </form>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
