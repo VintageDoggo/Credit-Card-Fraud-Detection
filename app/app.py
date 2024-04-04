@@ -8,8 +8,6 @@ from collections import Counter
 
 app = Flask(__name__, template_folder='templates')
 
-
-# Load your pre-trained model
 model_path = os.path.join(os.getcwd(), 'C:/COMP313-002-Winter2024-Team6---Credit-Card-Fraud-Detection/app/optimal_model_ann.h5')
 model = keras.models.load_model(model_path)
 #"C:/COMP313-002-Winter2024-Team6---Credit-Card-Fraud-Detection/app/optimal_model_ann.h5"
