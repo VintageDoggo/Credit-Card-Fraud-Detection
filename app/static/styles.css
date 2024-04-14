@@ -13,35 +13,68 @@ body {
 }
 
 .card {
-    background-color: white;
-    padding: 20px;
+    background-color: #fff;
+    padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
+    max-width: 500px;
 }
 
 .logo {
-    width: 150px; /* Adjust the size of the logo as needed */
+    width: 100px; /* Adjust the size of the logo as needed */
     margin-bottom: 20px;
 }
 
 .heading {
-    font-size: 24px; /* Increase the font size of the heading */
+    font-size: 32px; /* Increase the font size of the heading */
     color: #347571; /* Color for the heading */
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .prediction-button {
     background-color: #347571; /* Button color */
     color: white; /* Button text color */
-    padding: 10px 20px;
+    padding: 15px 30px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 18px; /* Increase the font size of the button text */
+    font-size: 20px; /* Increase the font size of the button text */
     transition: background-color 0.3s ease;
 }
 
 .prediction-button:hover {
     background-color: #285e4e; /* Darker color on hover */
+}
+
+.loading-text {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.loading-spinner {
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 5px solid #347571; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.result-container {
+    text-align: center;
+    max-width: 500px;
+}
+
+.result-text {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
 }

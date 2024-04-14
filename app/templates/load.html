@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loading</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- <script>
+        setTimeout(function() {
+            window.location.href = '/prediction';
+        }, 10000); // 2000 milliseconds = 2 seconds
+    </script> -->
 </head>
 <body>
     <div class="container">
-        <h1>Loading...</h1>
+        <div class="card">
+            <h1 class="loading-text">Loading...</h1>
+            <div class="loading-spinner"></div>
+        </div>
     </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
