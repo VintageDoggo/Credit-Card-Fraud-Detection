@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", function() {
         loadingSpinner.style.display = 'none';
 
         // Show the button
-        redirectButton.style.display = 'block';
-        redirectButton.disabled = false;
+        //redirectButton.style.display = 'block';
+        //redirectButton.disabled = false;
 
         // Make request to the endpoint
         var xhr = new XMLHttpRequest();
